@@ -28,17 +28,20 @@
 Whether you're a beginner struggling with squat depth or an athlete chasing progressive overload, CoachSaab delivers instant, actionable, and personalized coaching without ever compromising your privacy.
 
 ---
-
-## 📺 Demo Video
+## 📱 Application Interface & Workflow
 
 <div align="center">
 
-[![Watch Full Demo Video](https://img.shields.io/badge/▶%EF%B8%8F_Watch_Full_HD_Demo-docs%2FCoachsaab__Demo.mp4-22C55E?style=for-the-badge&logo=github&logoColor=white)](docs/Coachsaab_Demo.mp4)
+| 1. Home & Routine | 2. Live Form Tracking | 3. Post-Workout Summary | 4. AI Coach Reasoning |
+| :---: | :---: | :---: | :---: |
+| <img src="docs/home_screen.png" width="220" alt="Home Dashboard" /> | <img src="docs/squats_reps.png" width="220" alt="Real-time Pose Tracking" /> | <img src="docs/session_summary.png" width="220" alt="Session Summary" /> | <img src="docs/coachsaab_chatbot.png" width="220" alt="Conversational AI Coach" /> |
+| *Adaptive plan & daily targets* | *33-point CV pose estimation & voice cues* | *Rep breakdown & dominant deviation* | *LangGraph agent reasoning over logs* |
 
-<br/><br/>
+<br/>
 
-> 🎬 **[Click here to watch the full 1080p 60fps walkthrough directly on GitHub](docs/Coachsaab_Demo.mp4)**  
-> *Demonstrates real-time 33-point pose landmark estimation, sub-second TTS voice coaching, dynamic plan drafting, and conversational AI agent reasoning.*
+[![Watch Demo Walkthrough](https://img.shields.io/badge/▶%EF%B8%8F_Watch_Full_HD_Demo-docs%2FCoachsaab__Demo.mp4-22C55E?style=for-the-badge&logo=quicktime&logoColor=white)](docs/Coachsaab_Demo.mp4)
+&nbsp;
+[![Direct Download](https://img.shields.io/badge/Download_MP4-43.3_MB-blue?style=for-the-badge&logo=github)](https://github.com/technospes/CoachSaab-backend/raw/main/docs/Coachsaab_Demo.mp4)
 
 </div>
 
