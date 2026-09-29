@@ -33,13 +33,12 @@ Whether you're a beginner struggling with squat depth or an athlete chasing prog
 
 <div align="center">
 
-<video src="https://github.com/technospes/CoachSaab-backend/releases/download/v1.0.0/Coachsaab.Demo.mp4" controls="controls" width="100%" style="max-height: 520px; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.15);">
-  Your browser does not support the video tag. You can <a href="https://github.com/technospes/CoachSaab-backend/releases/download/v1.0.0/Coachsaab.Demo.mp4">download the demo video here</a>.
-</video>
+[![Watch Full Demo Video](https://img.shields.io/badge/▶%EF%B8%8F_Watch_Full_HD_Demo-docs%2FCoachsaab__Demo.mp4-22C55E?style=for-the-badge&logo=github&logoColor=white)](docs/Coachsaab_Demo.mp4)
 
-<p align="center">
-  <i>Watch CoachSaab's real-time pose tracking, dynamic plan drafting, and conversational AI coaching in action.</i>
-</p>
+<br/><br/>
+
+> 🎬 **[Click here to watch the full 1080p 60fps walkthrough directly on GitHub](docs/Coachsaab_Demo.mp4)**  
+> *Demonstrates real-time 33-point pose landmark estimation, sub-second TTS voice coaching, dynamic plan drafting, and conversational AI agent reasoning.*
 
 </div>
 
