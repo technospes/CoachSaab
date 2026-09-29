@@ -15,7 +15,7 @@
   <b>Transforming ordinary smartphone cameras into an active, on-device biomechanical laboratory.</b><br>
   <i>No expensive wearable sensors. No cloud video latency. Zero video privacy risks.</i>
 </p>
-[🎥 Video Demo](#-demo-video) • [📌 Problem Statement](#-problem-statement) • [🏗️ Architecture](#️-system-architecture) • [⚡ Getting Started](#-getting-started) • [📡 API Specs](#-backend-api-highlights)
+[🎥 Video Demo](#-demo-video) • [📌 Problem Statement](#-problem-statement) • [🏗️ Architecture](#️-system-architecture) • [⚡  Started](#-getting-started) • [📡 API Specs](#-backend-api-highlights)
 
 ---
 
@@ -39,7 +39,9 @@ Whether you're a beginner struggling with squat depth or an athlete chasing prog
 
 <br/>
 
-[![Watch Demo Walkthrough](https://img.shields.io/badge/▶%EF%B8%8F_Watch_Full_HD_Demo-docs%2FCoachsaab__Demo.mp4-22C55E?style=for-the-badge&logo=quicktime&logoColor=white)](docs/Coachsaab_Demo.mp4)
+[![Install Android APK](https://img.shields.io/badge/Install_Android_App-v1.0.0_(Release_APK)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/technospes/CoachSaab/releases/download/v1.0.0/CoachSaab-v1.0.0.apk)
+&nbsp;
+[![Watch Demo Walkthrough](https://img.shields.io/badge/▶%EF%B8%8F_Watch_Demo_Video-docs%2FCoachsaab__Demo.mp4-22C55E?style=for-the-badge&logo=quicktime&logoColor=white)](docs/Coachsaab_Demo.mp4)
 &nbsp;
 [![Direct Download](https://img.shields.io/badge/Download_MP4-43.3_MB-blue?style=for-the-badge&logo=github)](https://github.com/technospes/CoachSaab-backend/raw/main/docs/Coachsaab_Demo.mp4)
 
@@ -188,7 +190,7 @@ CoachSaab/
 
 ---
 
-## ⚡ Getting Started
+## ⚡  Started
 
 ### Prerequisites
 
