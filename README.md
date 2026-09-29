@@ -15,7 +15,8 @@
   <b>Transforming ordinary smartphone cameras into an active, on-device biomechanical laboratory.</b><br>
   <i>No expensive wearable sensors. No cloud video latency. Zero video privacy risks.</i>
 </p>
-[🎥 Video Demo](#-demo-video) • [📌 Problem Statement](#-problem-statement) • [🏗️ Architecture](#️-system-architecture) • [⚡  Started](#-getting-started) • [📡 API Specs](#-backend-api-highlights)
+
+[📱 App Interface](#-application-interface--workflow) • [📌 Problem Statement](#-problem-statement) • [🚀 Features](#-key-features) • [🏗️ Architecture](#️-system-architecture) • [⚡ Getting Started](#-getting-started) • [📡 API Specs](#-backend-api-highlights)
 
 ---
 
@@ -28,6 +29,27 @@
 Whether you're a beginner struggling with squat depth or an athlete chasing progressive overload, CoachSaab delivers instant, actionable, and personalized coaching without ever compromising your privacy.
 
 ---
+
+## 📑 Table of Contents
+
+- [Overview](#-overview)
+- [Application Interface & Workflow](#-application-interface--workflow)
+- [Problem Statement](#-problem-statement)
+- [Key Features](#-key-features)
+- [System Architecture](#️-system-architecture)
+  - [Data Flow](#-data-flow)
+- [Project Structure](#-project-structure)
+- [Tech Stack](#️-tech-stack)
+- [Getting Started](#-getting-started)
+  - [Backend Setup](#1️⃣-backend-setup)
+  - [Frontend Setup](#2️⃣-frontend-setup)
+- [Backend API Highlights](#-backend-api-highlights)
+- [Privacy & Security](#-privacy--security)
+- [Roadmap](#️-roadmap)
+- [Team & Acknowledgements](#-team-cat_gpt)
+
+---
+
 ## 📱 Application Interface & Workflow
 
 <div align="center">
@@ -190,7 +212,7 @@ CoachSaab/
 
 ---
 
-## ⚡  Started
+## ⚡ Getting Started
 
 ### Prerequisites
 
