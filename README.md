@@ -15,8 +15,7 @@
   <b>Transforming ordinary smartphone cameras into an active, on-device biomechanical laboratory.</b><br>
   <i>No expensive wearable sensors. No cloud video latency. Zero video privacy risks.</i>
 </p>
-
-[🎥 Video Demo](https://youtu.be/) • [📌 Problem Statement](#-problem-statement) • [🏗️ Architecture](#️-system-architecture) • [⚡ Getting Started](#-getting-started) • [📡 API Specs](#-backend-api-highlights)
+[🎥 Video Demo](#-demo-video) • [📌 Problem Statement](#-problem-statement) • [🏗️ Architecture](#️-system-architecture) • [⚡ Getting Started](#-getting-started) • [📡 API Specs](#-backend-api-highlights)
 
 ---
 
@@ -27,6 +26,22 @@
 **CoachSaab** is an intelligent, privacy-first fitness companion that turns any Android smartphone into a real-time personal trainer. By leveraging on-device pose estimation and an agentic AI backend, CoachSaab doesn't just count your reps — it **understands your movement**, corrects your form in real time, and continuously adapts your training plan based on historical performance.
 
 Whether you're a beginner struggling with squat depth or an athlete chasing progressive overload, CoachSaab delivers instant, actionable, and personalized coaching without ever compromising your privacy.
+
+---
+
+## 📺 Demo Video
+
+<div align="center">
+
+<video src="https://github.com/technospes/CoachSaab-backend/releases/download/v1.0.0/Coachsaab.Demo.mp4" controls="controls" width="100%" style="max-height: 520px; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.15);">
+  Your browser does not support the video tag. You can <a href="https://github.com/technospes/CoachSaab-backend/releases/download/v1.0.0/Coachsaab.Demo.mp4">download the demo video here</a>.
+</video>
+
+<p align="center">
+  <i>Watch CoachSaab's real-time pose tracking, dynamic plan drafting, and conversational AI coaching in action.</i>
+</p>
+
+</div>
 
 ---
 
