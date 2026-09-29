@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "running",
+  "name": "Treadmill Run",
+  "tracking_mode": "continuous",
+  "primary_metric": "cadence",
+  "required_landmarks": [
+    "nose",
+    "leftShoulder",
+    "rightShoulder",
+    "leftHip",
+    "rightHip",
+    "leftKnee",
+    "rightKnee",
+    "leftAnkle",
+    "rightAnkle"
+  ],
+  "required_metrics": [],
+  "movement": {
+    "initial_state": "gait_cycle",
+    "parameters": {},
+    "phases": [
+      {
+        "id": "gait_cycle",
+        "transitions": []
+      }
+    ]
+  },
+  "rules": []
+}

@@ -1,0 +1,15 @@
+name: Keep Render Alive
+on:
+  schedule:
+    # Temporarily running 24/7 for the hackathon all-nighter
+    - cron: '*/3 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render Health Endpoint
+        run: |
+          curl -s -o /dev/null -w "%{http_code}" \
+            https://coachsaab-api.onrender.com/api/v1/health

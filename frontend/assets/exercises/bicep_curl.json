@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "id": "bicep_curl",
+  "name": "Standard Bicep Curl",
+  "required_landmarks": [
+    "activeShoulder",
+    "activeElbow",
+    "activeWrist"
+  ],
+  "required_metrics": [
+    "elbow_angle",
+    "upper_arm_vertical_deviation"
+  ],
+  "primary_metric": "elbow_angle",
+  "movement": {
+    "initial_state": "top",
+    "parameters": {},
+    "phases": [
+      {
+        "id": "top",
+        "transitions": [
+          {
+            "target_phase": "descending",
+            "metric": "elbow_angle",
+            "condition": "less_than",
+            "value": 140.0
+          }
+        ]
+      },
+      {
+        "id": "descending",
+        "transitions": [
+          {
+            "target_phase": "bottom",
+            "metric": "elbow_angle",
+            "condition": "reversal_increase",
+            "value": 5.0
+          },
+          {
+            "target_phase": "aborted",
+            "metric": "elbow_angle",
+            "condition": "greater_than",
+            "value": 160.0
+          }
+        ]
+      },
+      {
+        "id": "bottom",
+        "transitions": [
+          {
+            "target_phase": "ascending",
+            "metric": "elbow_angle",
+            "condition": "reversal_increase",
+            "value": 15.0
+          }
+        ]
+      },
+      {
+        "id": "ascending",
+        "transitions": [
+          {
+            "target_phase": "completed",
+            "metric": "elbow_angle",
+            "condition": "greater_than",
+            "value": 160.0 
+          },
+          {
+            "target_phase": "aborted",
+            "metric": "elbow_angle",
+            "condition": "reversal_decrease",
+            "value": 10.0
+          }
+        ]
+      },
+      {
+        "id": "completed",
+        "transitions": []
+      },
+      {
+        "id": "aborted",
+        "transitions": []
+      }
+    ]
+  },
+  "rules": [
+    {
+      "joint": "activeElbow",
+      "metric": "elbow_angle",
+      "phase": "bottom", 
+      "aggregation": "minimum",
+      "weight": 1.0,
+      "deviation_type": "insufficient_curl",
+      "persistence_ms": 0,
+      "zones": [
+        {
+          "min": 0.0,
+          "max": 75.0,
+          "label": "excellent",
+          "score": 100.0
+        },
+        {
+          "min": 75.0,
+          "max": 95.0,
+          "label": "acceptable",
+          "score": 85.0
+        },
+        {
+          "min": 95.0,
+          "max": 120.0,
+          "label": "imperfect",
+          "score": 60.0
+        },
+        {
+          "min": 120.0,
+          "max": 180.0,
+          "label": "poor",
+          "score": 20.0
+        }
+      ]
+    },
+    {
+      "joint": "activeElbow",
+      "metric": "elbow_angle",
+      "phase": "ascending", 
+      "aggregation": "maximum",
+      "weight": 1.0,
+      "deviation_type": "insufficient_extension",
+      "persistence_ms": 0,
+      "zones": [
+        {
+          "min": 150.0,
+          "max": 180.0,
+          "label": "excellent",
+          "score": 100.0
+        },
+        {
+          "min": 135.0,
+          "max": 150.0,
+          "label": "acceptable",
+          "score": 85.0
+        },
+        {
+          "min": 120.0,
+          "max": 135.0,
+          "label": "imperfect",
+          "score": 60.0
+        },
+        {
+          "min": 0.0,
+          "max": 120.0,
+          "label": "poor",
+          "score": 20.0
+        }
+      ]
+    },
+    {
+      "joint": "activeShoulder",
+      "metric": "upper_arm_vertical_deviation",
+      "phase": "descending",
+      "aggregation": "maximum",
+      "weight": 0.8,
+      "deviation_type": "excessive_elbow_swing",
+      "persistence_ms": 0,
+      "zones": [
+        {
+          "min": 0.0,
+          "max": 25.0,
+          "label": "excellent",
+          "score": 100.0
+        },
+        {
+          "min": 25.0,
+          "max": 40.0,
+          "label": "acceptable",
+          "score": 85.0
+        },
+        {
+          "min": 40.0,
+          "max": 55.0,
+          "label": "imperfect",
+          "score": 60.0
+        },
+        {
+          "min": 55.0,
+          "max": 180.0,
+          "label": "poor",
+          "score": 20.0
+        }
+      ]
+    }
+  ]
+}

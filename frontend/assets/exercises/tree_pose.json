@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "tree_pose",
+  "name": "Tree Pose",
+  "tracking_mode": "hold",
+  "hud_config": {
+    "target_duration_seconds": 30
+  },
+  "required_landmarks": [
+    "left_hip",
+    "right_hip",
+    "left_knee",
+    "right_knee",
+    "left_ankle",
+    "right_ankle"
+  ],
+  "required_metrics": [
+    "right_knee",
+    "left_knee"
+  ],
+  "primary_metric": "right_knee",
+  "movement": {
+    "initial_state": "idle",
+    "parameters": {},
+    "phases": [
+      {
+        "id": "idle",
+        "transitions": []
+      }
+    ]
+  },
+  "rules": [
+    {
+      "joint": "right_knee",
+      "metric": "angle",
+      "phase": "hold",
+      "aggregation": "minimum",
+      "weight": 1.0,
+      "deviation_type": "bent_standing_knee",
+      "persistence_ms": 500,
+      "zones": [
+        {
+          "min": 160.0,
+          "max": 180.0,
+          "label": "excellent",
+          "score": 100.0
+        },
+        {
+          "min": 0.0,
+          "max": 160.0,
+          "label": "poor",
+          "score": 20.0
+        }
+      ]
+    }
+  ]
+}

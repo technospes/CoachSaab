@@ -1,0 +1,50 @@
+# --- Secrets & Environment (CRITICAL) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Python / FastAPI Backend ---
+backend/__pycache__/
+backend/*/__pycache__/
+backend/**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/env/
+backend/venv/
+backend/.venv/
+backend/build/
+backend/dist/
+backend/*.egg-info/
+
+# --- Flutter / Dart Frontend ---
+frontend/.dart_tool/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.pub-cache/
+frontend/.pub/
+frontend/build/
+frontend/coverage/
+frontend/app.*.symbols
+frontend/app.*.map.json
+frontend/android/app/debug/
+frontend/android/app/profile/
+frontend/android/app/release/
+frontend/android/.gradle/
+frontend/android/local.properties
+frontend/ios/Pods/
+frontend/ios/.symlinks/
+
+# --- IDEs & System ---
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

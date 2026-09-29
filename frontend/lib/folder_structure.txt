@@ -1,0 +1,80 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 000001D2 A6E8:D8D4
+D:\AI_COACH_APP\LIB
+|   folder_structure.txt
+|   main.dart
+|   
++---biomechanics
+|   |   attempt_tracker.dart
+|   |   biomechanics_pipeline.dart
+|   |   deviation_tracker.dart
+|   |   form_evaluator.dart
+|   |   metric_engine.dart
+|   |   movement_engine.dart
+|   |   phase_metric_accumulator.dart
+|   |   rep_quality_engine.dart
+|   |   
+|   \---models
+|           attempt_result.dart
+|           rep_result.dart
+|           
++---core
+|   \---state
+|           plan_progress_controller.dart
+|           
++---data
+|   |   api_client.dart
+|   |   api_service.dart
+|   |   
+|   \---repositories
+|           plan_repository.dart
+|           
++---domain
+|       activity_config_model.dart
+|       activity_rule_model.dart
+|       default_exercises.dart
+|       exercise_definition.dart
+|       exercise_repository.dart
+|       joint_mapper.dart
+|       landmark_fusion.dart
+|       math_utils.dart
+|       movement_phase.dart
+|       one_euro_filter.dart
+|       pipeline_output.dart
+|       pose_smoother.dart
+|       rep_tracker.dart
+|       unified_landmark.dart
+|       
++---feedback
+|       feedback_engine.dart
+|       tts_controller.dart
+|       
++---presentation
+|   |   camera_view.dart
+|   |   hand_tracking_controller.dart
+|   |   pose_painter.dart
+|   |   smoothed_pose_painter.dart
+|   |   
+|   \---onboarding
+|           onboarding_screen.dart
+|           
++---screens
+|       app_shell.dart
+|       auth_screen.dart
+|       home_screen.dart
+|       otp_screen.dart
+|       plan_viewer_screen.dart
+|       preflight_screen.dart
+|       profile_screen.dart
+|       reports_screen.dart
+|       session_summary_screen.dart
+|       splash_screen.dart
+|       train_hub_screen.dart
+|       
++---services
+|       session_service.dart
+|       
+\---tracking
+        session_config.dart
+        session_tracker.dart
+        

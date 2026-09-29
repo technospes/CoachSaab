@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "squat",
+  "name": "Bodyweight Squat",
+  "required_landmarks": [
+    "rightHip",
+    "rightKnee",
+    "rightAnkle"
+  ],
+  "required_metrics": [
+    "knee_angle"
+  ],
+  "primary_metric": "knee_angle",
+  "movement": {
+    "initial_state": "top",
+    "parameters": {},
+    "phases": [
+      {
+        "id": "top",
+        "transitions": [
+          {
+            "target_phase": "descending",
+            "metric": "knee_angle",
+            "condition": "less_than",
+            "value": 160.0
+          }
+        ]
+      },
+      {
+        "id": "descending",
+        "transitions": [
+          {
+            "target_phase": "bottom",
+            "metric": "knee_angle",
+            "condition": "reversal_increase",
+            "value": 5.0
+          },
+          {
+            "target_phase": "aborted",
+            "metric": "knee_angle",
+            "condition": "greater_than",
+            "value": 175.0
+          }
+        ]
+      },
+      {
+        "id": "bottom",
+        "transitions": [
+          {
+            "target_phase": "ascending",
+            "metric": "knee_angle",
+            "condition": "reversal_decrease",
+            "value": 5.0
+          }
+        ]
+      },
+      {
+        "id": "ascending",
+        "transitions": [
+          {
+            "target_phase": "completed",
+            "metric": "knee_angle",
+            "condition": "greater_than",
+            "value": 155.0
+          },
+          {
+            "target_phase": "aborted",
+            "metric": "knee_angle",
+            "condition": "reversal_increase",
+            "value": 10.0
+          }
+        ]
+      },
+      {
+        "id": "completed",
+        "transitions": []
+      },
+      {
+        "id": "aborted",
+        "transitions": []
+      }
+    ]
+  },
+  "rules": [
+    {
+      "joint": "rightKnee",
+      "metric": "knee_angle",
+      "phase": "bottom",
+      "aggregation": "minimum",
+      "weight": 1.0,
+      "deviation_type": "insufficient_depth",
+      "persistence_ms": 0,
+      "zones": [
+        {
+          "min": 0.0,
+          "max": 90.0,
+          "label": "excellent",
+          "score": 100.0
+        },
+        {
+          "min": 90.0,
+          "max": 110.0,
+          "label": "acceptable",
+          "score": 85.0
+        },
+        {
+          "min": 110.0,
+          "max": 135.0,
+          "label": "imperfect",
+          "score": 60.0
+        },
+        {
+          "min": 135.0,
+          "max": 180.0,
+          "label": "poor",
+          "score": 20.0
+        }
+      ]
+    }
+  ]
+}

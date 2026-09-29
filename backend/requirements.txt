@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+pydantic[email]
+email-validator
+sqlalchemy
+psycopg2-binary
+python-dotenv
+langgraph
+langchain-core
+langchain-groq
+alembic
+pwdlib[argon2]
+PyJWT
+slowapi
+google-auth
+requests

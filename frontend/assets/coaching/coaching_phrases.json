@@ -1,0 +1,189 @@
+{
+  "schema_version": 3,
+  "global": {
+    "milestones": {
+      "rep": {
+        "halfway": [
+          "Halfway there.",
+          "Keep that pace.",
+          "Half done, {name}."
+        ],
+        "near_end": [
+          "Almost done, finish strong.",
+          "{remaining} left."
+        ]
+      },
+      "hold": {
+        "halfway": [
+          "Halfway there.",
+          "{seconds} seconds down.",
+          "Half done, hold steady."
+        ],
+        "near_end": [
+          "Five seconds left.",
+          "Almost there, hold.",
+          "{seconds} seconds in."
+        ]
+      },
+      "continuous": {
+        "start": ["Calibrated. Let's move."],
+        "split": ["{distance} down. Keep it steady."]
+      }
+    },
+    "good_rep": {
+      "encouragement": [
+        "Nice.",
+        "Solid.",
+        "That's it.",
+        "Beautiful."
+      ],
+      "exceptional": [
+        "Textbook rep, {name}.",
+        "Excellent.",
+        "That's exactly it."
+      ]
+    },
+    "post_correction": [
+      "Much better, {name}.",
+      "There you go.",
+      "Nice adjustment.",
+      "That's better."
+    ],
+    "imperfect_rep": [
+      "Good effort. Clean up that form on the next one.",
+      "Almost there. Stay focused on your form."
+    ],
+    "transitions": {
+      "set_start": [
+        "Ready, {name}? Let's go.",
+        "Alright, let's work."
+      ],
+      "set_start_late": [
+        "Late session, {name}. Let's get it done.",
+        "Putting in the late night work. Let's go."
+      ],
+      "rep_start": [
+        "Here we go.",
+        "Next one."
+      ],
+      "rest": [
+        "Good work. Take a breath.",
+        "Catch your breath."
+      ],
+      "set_complete": [
+        "Set complete. Nice work, {name}.",
+        "You finished strong."
+      ]
+    },
+    "session_feedback": {
+      "all_good": [
+        "Excellent set. Every rep was solid.",
+        "Great set, {name}. You stayed consistent."
+      ],
+      "mostly_good": [
+        "Good set. Most of your reps were solid.",
+        "Nice work. You were consistent overall."
+      ],
+      "needs_work": [
+        "Good effort. Let's clean that up next set.",
+        "You've got the movement. Let's work on consistency."
+      ]
+    }
+  },
+  "bicep_curl": {
+    "insufficient_curl": {
+      "correction": [
+        "Curl a little further.",
+        "Bring your hand closer to your shoulder.",
+        "Get the full curl."
+      ],
+      "repeated": [
+        "You're stopping short. Finish the curl.",
+        "Bring it all the way up."
+      ],
+      "firm": [
+        "Finish the curl, {name}.",
+        "All the way up."
+      ]
+    },
+    "excessive_elbow_swing": {
+      "correction": [
+        "Keep your elbow still.",
+        "Keep your elbow by your side."
+      ],
+      "repeated": [
+        "You're swinging. Keep it steady.",
+        "Don't let the elbow drift forward."
+      ],
+      "firm": [
+        "Keep that elbow still.",
+        "Stop swinging."
+      ]
+    },
+    "insufficient_extension": {
+      "correction": [
+        "Don't stop short. Let the weight pull your arm completely straight.",
+        "Control the release all the way down. Get that full stretch.",
+        "Straighten your elbow completely at the bottom of the rep.",
+        "Full range of motion, {name}. Lower the weight completely."
+      ],
+      "repeated": [
+        "You're still cutting the rep short. Lower it until your arm is locked out.",
+        "Full range of motion. Squeeze your tricep at the bottom to ensure full extension.",
+        "All the way down. Don't cheat the bottom half of the movement.",
+        "The bottom of the rep matters. Lock out the elbow."
+      ],
+      "firm": [
+        "Arm completely straight at the bottom.",
+        "Lock out the elbow.",
+        "Get the full stretch.",
+        "Squeeze the tricep."
+      ]
+    }
+  },
+  "squat": {
+    "insufficient_depth": {
+      "correction": [
+        "Squat deeper. Drop your hips below your knees.",
+        "Get lower. Imagine sitting back into a chair.",
+        "Don't cut it short. Break parallel on the next rep.",
+        "Sink deeper into the squat, {name}."
+      ],
+      "repeated": [
+        "Still too shallow. Drop your hips all the way down.",
+        "Push your knees out and sink deeper into the bottom of the squat.",
+        "You're missing the most important part of the range. Get those hips below the knee crease.",
+        "Get lower. Don't cheat the bottom of the movement."
+      ],
+      "firm": [
+        "Squat lower.",
+        "Break parallel.",
+        "Drop the hips.",
+        "Get lower on this next one."
+      ]
+    }
+  },
+  "_running": {
+    "_comment": "Dormant. Enable when BiomechanicsPipeline runs in continuous mode for v1.1.",
+    "cadence_too_low": {
+      "correction": [
+        "Your cadence is dropping. Try taking quicker, shorter steps.",
+        "Pick up your step rate. Focus on a faster turnover.",
+        "You're stepping a bit slow. Lighten your feet and increase the pace.",
+        "Keep your rhythm up, {name}. Quicker steps."
+      ],
+      "repeated": [
+        "Cadence is still low. Shorten your stride and land your feet directly under your hips.",
+        "Don't overstride. Drive your elbows straight back to speed up your feet.",
+        "Your steps are getting heavy. Focus on quick, light, rapid steps.",
+        "Increase your turnover rate. Keep those feet moving quickly."
+      ],
+      "firm": [
+        "Quicker steps.",
+        "Shorten your stride.",
+        "Pick up the cadence.",
+        "Faster turnover."
+      ]
+    }
+  }
+}
